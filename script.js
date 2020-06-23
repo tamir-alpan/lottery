@@ -6,9 +6,9 @@ function getComputerSelection() {
 
 function getUserSelection(userInput) {
     if (isWin(userInput)) {
-        alert("you win");
+        alert("you win!!!! you have good luck!");
     } else {
-        alert("you loose the computer chose " + compSelect + " and you chose " +userInput );
+        alert("you loose!!! the computer chose " + compSelect + " and you chose " +userInput );
     }
 }
 
