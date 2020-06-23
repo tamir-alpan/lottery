@@ -1,19 +1,17 @@
-// returns an integer
+var compSelect = getComputerSelection();
+
 function getComputerSelection() {
-    // implement logic
+    return Math.floor(1 + Math.random() * 4);
 }
 
-// returns an integer
-function getUserSelection() {
-    // until we learn how to onclick 
-    // change this number manually to check your logic
-    return 0;
+function getUserSelection(userInput) {
+    if (isWin(userInput)) {
+        alert("you win");
+    } else {
+        alert("you loose the computer chose " + compSelect + " and you chose " +userInput );
+    }
 }
 
-// returns a boolean
-function isWin() {
-    // implement logic
+function isWin(num) {
+    return compSelect === num;
 }
-
-var isWin = isWin();
-console.log("isWin: ", isWin) // should return true or false
